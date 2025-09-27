@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QAPage">
+    android:padding="24dp"
+    android:background="@drawable/nature">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi 1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <!-- Nội dung câu hỏi -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trong các số này, số nào là số nguyên tố?"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Đáp án A -->
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="A. 100"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Đáp án B -->
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="B. 33"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Đáp án C -->
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="C. 50"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Đáp án D -->
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="D. 97"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
